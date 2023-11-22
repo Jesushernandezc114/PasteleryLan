@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    android:padding="16dp"
+    tools:context=".vista.edit_venta">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo2">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:hint="ID"
+            android:shadowColor="#E91E63"
+            android:textColor="#E91E63"
+            android:textColorHint="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtIDCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="ID Cliente"
+            android:textColor="#E91E63"
+            android:textColorHint="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextId"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Descripcion"
+            android:textColor="#E91E63"
+            android:textColorHint="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtIDCL"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnRegistrarVn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="120dp"
+            android:backgroundTint="#FE7D8E"
+            android:text="Editar Venta"
+            android:textColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDescripcion"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnBuscarVn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="117dp"
+            android:backgroundTint="#FE7D8E"
+            android:text="Buscar Venta"
+            android:textColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegistrarVn"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnEliminarVn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="113dp"
+            android:backgroundTint="#FE7D8E"
+            android:text="Eliminar Venta"
+            android:textColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBuscarVn"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="166dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Modificar Venta"
+            android:textColor="#E91E63"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,SpUsage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

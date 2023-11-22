@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    tools:context=".vista.inicio">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="360dp"
+      android:layout_height="700dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="30dp"
+      android:background="@drawable/fondo2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="TextSizeCheck">
+
+    <Button
+        android:id="@+id/btnRegistrarCl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Registrar Cliente"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnEditCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Editar Cliente"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarCl"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,MissingConstraints,TextContrastCheck,UnknownId" />
+
+    <Button
+        android:id="@+id/btnEditVn"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Editar venta"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarVN"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnListarVn"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Listar Ventas"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditVn"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,UnknownId" />
+
+    <Button
+        android:id="@+id/btnListarCl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Listar Cliente"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditCL"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnRegistrarVN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FE7D8E"
+        android:text="Registrar venta"
+        android:textColor="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarCl"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/cliente"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegistrarCl"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="136dp"
+        android:layout_height="130dp"
+        android:src="@drawable/iconov"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditVn"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.277"
+        tools:ignore="ContentDescription" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

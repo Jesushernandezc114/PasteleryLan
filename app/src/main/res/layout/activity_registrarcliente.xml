@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    android:padding="16dp"
+    tools:context=".vista.registrarcliente">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo2">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:backgroundTint="#E91E63"
+            android:hint="ID"
+            android:textColor="#E91E63"
+            android:textColorHighlight="#E91E63"
+            android:textColorHint="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtIDCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E91E63"
+            android:hint="Nombre"
+            android:importantForAutofill="no"
+            android:textColor="#E91E63"
+            android:textColorHint="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextId"
+            tools:ignore="HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E91E63"
+            android:hint="numero telefonico"
+            android:textColor="#E91E63"
+            android:textColorHint="#E91E63"
+            android:textColorLink="#E91E63"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtIDCL"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnRegistrarCl"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#FE7D8E"
+            android:text="Registrar Usuario"
+            android:textColor="#E91E63"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDescripcion"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="139dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Registrar cliente"
+            android:textColor="#E91E63"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

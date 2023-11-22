@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CafeteryLan"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PasteleryLAn"
+        tools:targetApi="31"
+
+        tools:ignore="DataExtractionRules">
+
+        <activity
+            android:name=".vista.listarventa"
+            android:exported="false" />
+        <activity
+            android:name=".vista.edit_venta"
+            android:exported="false" />
+        <activity
+            android:name=".vista.registrarventa"
+            android:exported="false" />
+        <activity
+            android:name=".vista.EditCliente"
+            android:exported="false" />
+        <activity
+            android:name=".vista.ListarCliente"
+            android:exported="false" />
+        <activity
+            android:name=".vista.registrarcliente"
+            android:exported="false" />
+        <activity
+            android:name=".vista.inicio"
+            android:exported="false" />
+        <activity
+            android:name=".vista.Registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".vista.login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

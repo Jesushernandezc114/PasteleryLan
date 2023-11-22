@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".vista.login"
+    android:background="@drawable/fondo"
+    >
+
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#FE7D8E"
+        android:hint="Nombre de usuario"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/Pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FE7D8E"
+        android:fontFamily="sans-serif-black"
+        android:onClick="onClick"
+        android:text="Iniciar sesión"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pass"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FE7D8E"
+        android:fontFamily="sans-serif-black"
+        android:onClick="registrarse"
+        android:text="Registrarse"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Contraseña"
+        android:backgroundTint="#FE7D8E"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#FE7D8E"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Inicie sesion"
+        android:textColor="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="@drawable/circle"
+        android:layout_width="180dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
