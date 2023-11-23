@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress ALL -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,10 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PasteleryLAn"
-        tools:targetApi="31"
-
-        tools:ignore="DataExtractionRules">
-
+        tools:ignore="DataExtractionRules"
+        tools:targetApi="31">
+        <activity
+            android:name=".vista.juego"
+            android:exported="false" />
         <activity
             android:name=".vista.listarventa"
             android:exported="false" />
@@ -46,10 +46,9 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
+        <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
     </application>
 
 </manifest>
