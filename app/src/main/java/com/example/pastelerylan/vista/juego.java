@@ -28,10 +28,10 @@ public class juego extends Activity implements SensorEventListener {
             if (accelerometer != null) {
                 sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
             } else {
-                // El dispositivo no tiene un acelerómetro.
+                showToast("Este dispositivo no tiene un sensor de acelerómetro.");
             }
         } else {
-            // El dispositivo no tiene soporte para sensores.
+            showToast("Este dispositivo no tiene soporte para sensores.");
         }
     }
 
